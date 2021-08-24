@@ -1,0 +1,75 @@
+
+Package: tmux
+Description: Terminal multiplexer
+
+Package: wget
+Description: Commandline tool for retrieving files using HTTP, HTTPS and FTP
+
+Package: file
+Description: Command-line tool that tells you in words what kind of data a file contains
+
+Package: tar
+Description: GNU tar for manipulating tar archives
+
+Package: zip
+Description: Tools for working with zip files
+
+Package: mlocate
+Description: Tool to find files anywhere in the filesystem based on their name
+
+Package: nmap
+Description: Utility for network discovery and security auditing
+
+Package: python
+Description: Python 3 programming language intended to enable clear programs
+
+Package: golang
+Description: Go programming language compiler
+
+Package: man
+Description: Man page viewer from the mandoc toolset
+
+Package: littlecms
+Description: Color management library
+
+Package: git
+Description: Fast, scalable, distributed revision control system
+
+Package: binutils
+Description: Collection of binary tools, the main ones being ld, the GNU linker, and as, the GNU assembler
+
+Package: proot
+Description: Emulate chroot, bind mount and binfmt_misc for non-root users
+
+Package: radare2
+Description: Advanced Hexadecimal Editor
+
+Name: pip
+Summary: The PyPA recommended tool for installing Python packages.
+
+Name: eg
+Summary: Examples at the command line
+
+Name: tldr
+Summary: command line client for tldr
+
+Name: ipython
+Summary: IPython: Productive Interactive Computing
+
+Name: dnsutils
+Description: This package delivers various client programs related to DNS
+
+Name: nano
+Description: Small, free and friendly text editor
+
+Package: dropbear
+Description: dropbear is a SSH server designed to be small enough to be used in small memory environments, while still being functional and secure enough for general use.
+
+Package: cronie
+Description: Daemon that runs specified programs at scheduled times and related tools
+
+Package: bash-completion
+Description: Programmable completion for the bash shell
+
+This script install in Termux some binaries that by defalt is installed in a GnuLinux distro(Use GnuLinux,if you use it and you are man it gonna become you in multi orgasmic, and if you're girl your orgasms will be at double, and so much things gonna be improve in your life, Yeah I know what you think...I can't stop of say stupidities?...Don't...Coding must be funny, at least for me...You know...my code, my jokes...LoL), anyway in a fresh install of Termux this binaries isn't installed, you know...Termux...LoL...Anyway there's binaries so basic like man(You know...Read the fucking manual first) that isn't installed by default in Termux also another things, so for that this script, this script install that useful things, a debugger very cool(radare2), interpreters of coding languages(python, golang), a very cool ide like for python(ipython),a very cool network scanner(nmap), tools for work with binaries(binutils), tools for get examples of use binaries(eg, tldr), tools for work with compress archives(tar, zip), and a binary to emulate a pseudo root(proot, you know fakeroot or chroot is for cowards in Android), and another cool things(see the list of binaries for be install), also this script set a .bashrc archive that have so cool configurations and change the default prompt for another so much cool, you know the prompt by default in Termux is fully malnourished and simple, so for that is added an extra very cool prompt, type impt to change the prompt or impb to back to your default prompt, also is installed ccat, a cat version with syntax highlight, with 3 extra themes with diferents color schemes, ccatfancy, ccatdark, ccatnight) also is add an umask config set to 027, is set nano by default to show line number and softwrap, also is configure LS_COLORS this is a collection of extension:color mappings...So this is all for now, so  animus, skate, use GnuLinux, read the fucking manual, don't smoke crack, take care of plants, help the persons, take care of animals and planet, be good person and cool, animus, You can, We can...Remember..Never give UP.....Peace && Love; GnuLinux...smile
+
