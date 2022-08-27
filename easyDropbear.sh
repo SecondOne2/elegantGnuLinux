@@ -14,18 +14,18 @@ help() {
         ${0%.??} [\e[4mOPTION\033[0m]... [\033[4mARGUMENT\e[0m]...
 
     \033[1mDESCRIPTION\e[0m
-        So easy my friend, this script does nothing..Joke...Ok, this script     help you to run the ssh server in automatic, due you are running a  ssh server in a smartPhone(\e[4mTermux\e[0m), you change or connect     to a lot of networks in all day, so you must re configure the   dropbear server manually again and again, this script does that for   you in automatic, also it have another function, predicts the future,     ok don't just make you smile and set the dropbear key config for    generate a ssh key for use with Openssh(see the manual of dropbearkey  command) client.
+        So easy my friend, this script does nothing..Joke...Ok, this script help you to run the ssh server in automatic, due you are running a  ssh server in a smartPhone(\e[4mTermux\e[0m), you change or connect     to a lot of networks in all day, so you must re configure the   dropbear server manually again and again, this script does that for   you in automatic, also it have another function, predicts the future,     ok don't just make you smile and set the dropbear key config for    generate a ssh key for use with Openssh(see the manual of dropbearkey  command) client.
 
         If you run this script without arguments all the dropbear sessions  are close and start a new session setting a random port for the dropbear server.
 
         \e[1m-a\033[0m
-                Access point, when you use you smartphone like WiFi spot, for   share the internet connection you can run dropbear in that    interface for share a ssh session to the devices connected to  your spot, the port of the server is set in a random port    with a range from 1024 at 65535
+                Access point, when you use you smartphone like WiFi spot, for share the internet connection you can run dropbear in that    interface for share a ssh session to the devices connected to  your spot, the port of the server is set in a random port    with a range from 1024 at 65535
 
         \e[1m-b\033[0m \033[4mBANNER PATH\e[0m
-                Run the dropbear server with a access banner in a random port   with a range from 1024 at 65535
+                Run the dropbear server with a access banner in a random port with a range from 1024 at 65535
 
         \e[1m-c\033[0m
-                Configure a new default key for the dropbear server, and make   a ssh key for use with the \033[4mopenssh\e[0m client, the  path which it's created is $HOME/rsa_dropbearkey_openssh
+                Configure a new default key for the dropbear server, and make a ssh key for use with the \033[4mopenssh\e[0m client, the  path which it's created is $HOME/rsa_dropbearkey_openssh
 
         \e[1m-h\033[0m
                 Print the help page of this script....Obviusly
@@ -43,13 +43,13 @@ help() {
 
 
     \033[1mAUTHOR\e[0m
-        mmm...Who, who, or yes, me Alex(Z3r0)..Or was not me?...I just know     that I know nothing...my head hurts.
+        mmm...Who, who, or yes, me Alex(Z3r0)..Or was not me?...I just know that I know nothing...my head hurts.
 
     \033[1mREPORTING BUGS\e[0m
         To me... https://github.com/axelanimux or a pull request always is welcome, or anything that you think for improve this.
 
     \033[1mCOPYRIGHT\e[0m
-        Open Source baby...I hear GPL?...Read the manual, this is almost same   (LoL) that a manual page...Animus Never Give UP....Be Green, Ever  Green, Relax Animus.
+        Open Source baby...I hear GPL?...Read the manual, this is almost same (LoL) that a manual page...Animus Never Give UP....Be Green, Ever  Green, Relax Animus.
 """
 }
 
