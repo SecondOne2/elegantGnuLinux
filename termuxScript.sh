@@ -24,7 +24,7 @@ select opt in ${options[*]}; do
         yesNo="Yes No"
         select topt in $yesNo; do
             if [[ "$topt" = "Yes" ]]; then
-                pkg install ${necessary[*]:0:21}; pip3 install --upgrade ${necessary[*]:21:4};cp bashrc $HOME/.bashrc; go get -u github.com/jingweno/ccat; grep ccat $HOME/.bashrc; [[ $? -ne 0  ]] && echo -e  "PATH+=\":$HOME/go/bin\"\nalias cat='ccat'" >> ~/.bashrc; wget https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/LS_COLORS; mv LS_COLORS $HOME/.LS_COLORS; grep LS_COLORS ~/.bashrc; [[ $? -ne 0 ]] && echo "eval \$( dircolors -b ~/.LS_COLORS )" >> $HOME/.bashrc; source ~/.bashrc ; printf "\n\n Ok ready if you want to exit of this script select the exit option, animus, \n\033[1mPeace and Love\e[0m\n\n" ;main
+                pkg install ${necessary[*]:0:21}; pip3 install --upgrade ${necessary[*]:21:4};cp bashrc $HOME/.bashrc; go get -u https://github.com/jingweno/ccat; grep ccat $HOME/.bashrc; [[ $? -ne 0  ]] && echo -e  "PATH+=\":$HOME/go/bin\"\nalias cat='ccat'" >> ~/.bashrc; wget https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/LS_COLORS; mv LS_COLORS $HOME/.LS_COLORS; grep LS_COLORS ~/.bashrc; [[ $? -ne 0 ]] && echo "eval \$( dircolors -b ~/.LS_COLORS )" >> $HOME/.bashrc; source ~/.bashrc ; printf "\n\n Ok ready if you want to exit of this script select the exit option, animus, \n\033[1mPeace and Love\e[0m\n\n" ;main
             elif [[ $topt = "No" ]]; then
             echo -e "\nOk maybe you aren't ready for this, maybe in the future, anyway ...Animus\nNeverGiveUp\nKeepTrying\nPeaceAndLove\nSaveThePlanet\n"; main
             else
