@@ -1,4 +1,4 @@
-#!~/../usr/bin/env bash
+#!/usr/bin/env bash
 
 # Script made by TitanHero https://github.com/TitanHero
 echo -e "\e[1;3;32;40mEasyTermux\n\e[0;1;4;36mThis Script will install useful stuff to can manage \033[0;1;5;34mTermux\033[0;1;4;36m in a most easy way\e[0m\nTake care of \e[0;1;32mplants\033[0m\n"
