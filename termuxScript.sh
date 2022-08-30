@@ -5,7 +5,7 @@ echo -e "\e[1;3;32;40mEasyTermux\n\e[0;1;4;36mThis Script will install useful st
 
 # Let's to put a few of vars with the binaries to install
 
-declare -a necessary=(python tmux wget file tar zip dnsutils mlocate nmap python golang man littlecms git binutils proot radare2 nano dropbear cronie bash-completion pip3 eg tldr ipython)
+declare -a necessary=(python tmux wget file tar zip dnsutils mlocate nmap python golang man littlecms git binutils proot radare2 nano dropbear cronie bash-completion eg tldr ipython pip3)
 
 options=("List_binaries" "Full_install" "Help" "Exit")
 
@@ -24,7 +24,7 @@ select opt in ${options[*]}; do
         yesNo="Yes No"
         select topt in $yesNo; do
             if [[ "$topt" = "Yes" ]]; then
-                pkg install ${necessary[*]:0:21}; pip3 install --upgrade ${necessary[*]:21:4};cp bashrc $HOME/.bashrc; go get -u https://github.com/jingweno/ccat; grep ccat $HOME/.bashrc; [[ $? -ne 0  ]] && echo -e  "PATH+=\":$HOME/go/bin\"\nalias cat='ccat'" >> ~/.bashrc; wget https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/LS_COLORS; mv LS_COLORS $HOME/.LS_COLORS; grep LS_COLORS ~/.bashrc; [[ $? -ne 0 ]] && echo "eval \$( dircolors -b ~/.LS_COLORS )" >> $HOME/.bashrc; source ~/.bashrc ; printf "\n\n Ok ready if you want to exit of this script select the exit option, animus, \n\033[1mPeace and Love\e[0m\n\n" ;main
+                pkg install ${necessary[*]:0:21}; ${necessary[24]} install --upgrade ${necessary[24]:0:3};${necessary[24]} install --upgrade ${necessary[*]:21:3};cp bashrc $HOME/.bashrc; go install github.com/jingweno/ccat@latest; grep -we "alias cat='ccat'" $HOME/.bashrc; [[ $? -ne 0  ]] && echo -e  "PATH+=\":$HOME/go/bin\"\nalias cat='ccat'" >> ~/.bashrc; wget https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/LS_COLORS; mv LS_COLORS $HOME/.LS_COLORS; grep LS_COLORS ~/.bashrc; [[ $? -ne 0 ]] && echo "eval \$( dircolors -b ~/.LS_COLORS )" >> $HOME/.bashrc; source ~/.bashrc ; printf "\n\n Ok ready if you want to exit of this script select the exit option, animus, \n\033[1mPeace and Love\e[0m\n\n" ;main
             elif [[ $topt = "No" ]]; then
             echo -e "\nOk maybe you aren't ready for this, maybe in the future, anyway ...Animus\nNeverGiveUp\nKeepTrying\nPeaceAndLove\nSaveThePlanet\n"; main
             else
