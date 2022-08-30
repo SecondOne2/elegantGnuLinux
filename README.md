@@ -103,11 +103,15 @@ Summary: IPython: Productive Interactive Computing
 
 Name: [ccat](https://github.com/jingweno/ccat)
 
-Decription: ccat is the colorizing cat. It works similar to cat but displays content with syntax highlighting.
+Description: ccat is the colorizing cat. It works similar to cat but displays content with syntax highlighting.
 
 Name: [LS_COLORS](https://github.com/trapd00r/LS_COLORS)
 
-Decription: A collection of LS_COLORS definitions; needs your contribution! 
+Description: A collection of LS_COLORS definitions; needs your contribution! 
+
+Name: easydropbear
+
+Description: A script for set in a easy way the dropbear server(For ssh connections) use the argument -h for see the options of config.
 
 ---
 
@@ -137,11 +141,11 @@ Only run the Script `termuxScript.sh` and choose any option, example:
 
 > Then we print the public key of our private key, and we add to the file authorized_keys, the next command create the file authorized_keys and send the public key to it:
 
-`dropbearkey -y -f $HOME/../usr/etc/dropbear/dropbear_rsa_host_key | grep "^ssh-rsa " >> ~/ssh/authorized_keys`
+`dropbearkey -y -f ~/../usr/etc/dropbear/dropbear_rsa_host_key | grep "^ssh-rsa " >> ~/ssh/authorized_keys`
 
 > Then we only use the dropbear_rsa_host_key (Just if we're using the dropbear client "dbclient"), if we  gonna use openssh for connect to the dropbear server, we must to convert the private key to openssh format this is do it, with the command dropbearconvert:
 
-`dropbearconvert dropbear openssh $HOME/../usr/etc/dropbear/dropbear_rsa_host_key $HOME/rsa_dropbearkey_openssh`
+`dropbearconvert dropbear openssh ~/../usr/etc/dropbear/dropbear_rsa_host_key $HOME/rsa_dropbearkey_openssh`
 
 > Then of this you only need to change the permission lread and write over the key, the key only must have permission of read and write for the owner(user), if you don't change the permission the client will not use the key, so here the command(from termux another case you must use sudo with this command):
 
@@ -151,7 +155,7 @@ Only run the Script `termuxScript.sh` and choose any option, example:
 
 `cd; python -m http.server 8080`
 
-> Then just connect to the ip address of your device that is running the dropbear server from your web browser putting in the url bar the ip and the port 192.168.0.10:8080 , and just select the key and click in it, the key will be downloaded and you can use for connect
+> Then just connect to the ip address of your device that is running the dropbear server from your web browser putting in the url bar the ip and the port 192.168.0.10:8080 and just select the key and click in it, the key will be downloaded and you can use for connect
 
 
 > And for last for use the private key just use the argument -i in your ssh command for specific which key use it(This from client openssh):
