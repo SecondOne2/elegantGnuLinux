@@ -602,13 +602,13 @@ alias nano='nano -l$'
 # alias dmesg='dmesg --color=always'
 
 
-alias ccatnight='ccat -G String=darkgray -G Keyword=turquoise -G Comment=bold -G Type=green -G Plaintext=blue -G Punctuation=fuchsia -G Decimal=bold -G Tag=turquoise -G Literal=darkred'
+alias catn='ccat -G String=darkgray -G Keyword=turquoise -G Comment=bold -G Type=green -G Plaintext=blue -G Punctuation=fuchsia -G Decimal=bold -G Tag=turquoise -G Literal=darkred'
 
 
-alias ccatdark='ccat -G Keyword=fuscia -G Type=blue -G Literal=green -G Keyword=darkgreen -G Plaintext=bold -G Punctuation=darkred -G Decimal=darkgray  -G String=red -G Tag=yellow'
+alias catd='ccat -G Keyword=fuscia -G Type=blue -G Literal=green -G Keyword=darkgreen -G Plaintext=bold -G Punctuation=darkred -G Decimal=darkgray  -G String=red -G Tag=yellow'
 
 
-alias ccatfancy='ccat -G Comment=fuscia -G Keyword=*darkgreen* -G Plaintext=blue -G Punctuation=darkgreen -G Decimal=_white_ -G String=black -G Tag=yellow -G Type=darkblue -G Literal=*fuscia*'
+alias catf='ccat -G Comment=fuscia -G Keyword=*darkgreen* -G Plaintext=blue -G Punctuation=darkgreen -G Decimal=_white_ -G String=black -G Tag=yellow -G Type=darkblue -G Literal=*fuscia*'
 
 #*******************************************************************#
 # Alias for testing, without hints, here goes alias for commands that 
@@ -670,7 +670,9 @@ alias impb='export PS1=$deprompt'
 #*******************************************************************#
 
 # tmux a; [[ $? -ne 0 ]] && tmux
+
 alias grep='grep --colour=always '
+
 #*******************************************************************#
 # This alias are for show info of help about interesting commands,
 # or useful OneLiners for work with Bash in GnuLinux ✌️😉😁👍, so
