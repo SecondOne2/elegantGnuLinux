@@ -670,7 +670,7 @@ alias impb='export PS1=$deprompt'
 #*******************************************************************#
 
 # tmux a; [[ $? -ne 0 ]] && tmux
-
+alias grep='grep --colour=always '
 #*******************************************************************#
 # This alias are for show info of help about interesting commands,
 # or useful OneLiners for work with Bash in GnuLinux ✌️😉😁👍, so
