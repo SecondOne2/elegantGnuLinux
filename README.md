@@ -33,6 +33,10 @@ Package: mlocate
 
 Description: Tool to find files anywhere in the filesystem based on their name
 
+Package which
+
+Description: Shows the full path of (shell) commands
+
 Package: nmap
 
 Description: Utility for network discovery and security auditing

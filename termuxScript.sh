@@ -5,7 +5,7 @@ echo -e "\e[1;3;32;40mEasyTermux\n\e[0;1;4;36mThis Script will install useful st
 
 # Let's to put a few of vars with the binaries to install
 
-declare -a necessary=(python tmux wget file tar zip dnsutils mlocate nmap python golang man littlecms git binutils proot radare2 nano dropbear cronie bash-completion eg tldr ipython pip3)
+declare -a necessary=(python tmux wget file tar zip dnsutils mlocate nmap which golang man littlecms git binutils proot radare2 nano dropbear cronie bash-completion eg tldr ipython pip3)
 
 options=("List_binaries" "Full_install" "Help" "Exit")
 
