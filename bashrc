@@ -573,7 +573,7 @@ umask 027
 # This alias for nano adds the line number and soft wrap ...animus...Peace && Love
 #*******************************************************************#
 
-alias nano='nano -l$'
+alias nano='nano -SlED'
 
 
 #*******************************************************************#
